@@ -21,6 +21,7 @@ typedef enum {
 	iPhone41_iOS934,
 	iPhone51_iOS932,
 	iPhone52_iOS932,
+    iPhone52_iOS91,
 	iPhone53_iOS932,
 	iPhone53_iOS933,
 	iPad21_iOS931,
@@ -82,6 +83,12 @@ uint32_t find_task_for_pid(void);
 
 // setreuid
 uint32_t find_setreuid(void);
+
+// setreuid_after_check offset
+uint32_t find_setreuid_offset(void);
+
+// mount
+uint32_t find_mount(void);
 
 // pid_check_addr offset
 uint32_t find_pid_check(void);

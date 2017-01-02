@@ -16,6 +16,9 @@
 		43CDFA561DCFA16600046EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43CDFA541DCFA16600046EB0 /* LaunchScreen.storyboard */; };
 		43CDFA5E1DCFA1DE00046EB0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43CDFA5D1DCFA1DE00046EB0 /* IOKit.framework */; };
 		43CDFA721DCFA34300046EB0 /* exploit.c in Sources */ = {isa = PBXBuildFile; fileRef = 43CDFA711DCFA34300046EB0 /* exploit.c */; };
+		D3AED2C51E1A6FD9001573D7 /* ibss in Resources */ = {isa = PBXBuildFile; fileRef = D3AED2C41E1A6FD9001573D7 /* ibss */; };
+		D3AED2C71E1A7397001573D7 /* kloader_asm.s in Sources */ = {isa = PBXBuildFile; fileRef = D3AED2C61E1A7397001573D7 /* kloader_asm.s */; };
+		D3C07E9A1E166455001D38A4 /* kloader.c in Sources */ = {isa = PBXBuildFile; fileRef = D3C07E981E1663A4001D38A4 /* kloader.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		43CDFA6A1DCFA26C00046EB0 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOTypes.h; path = Headers/IOKit/IOTypes.h; sourceTree = "<group>"; };
 		43CDFA6B1DCFA26C00046EB0 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OSMessageNotification.h; path = Headers/IOKit/OSMessageNotification.h; sourceTree = "<group>"; };
 		43CDFA711DCFA34300046EB0 /* exploit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = exploit.c; sourceTree = "<group>"; };
+		D3AED2C41E1A6FD9001573D7 /* ibss */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ibss; sourceTree = "<group>"; };
+		D3AED2C61E1A7397001573D7 /* kloader_asm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = kloader_asm.s; sourceTree = "<group>"; };
+		D3C07E981E1663A4001D38A4 /* kloader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kloader.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +90,11 @@
 				43CDFA571DCFA16600046EB0 /* Info.plist */,
 				43CDFA461DCFA16600046EB0 /* Supporting Files */,
 				43CDFA711DCFA34300046EB0 /* exploit.c */,
+				D3AED2C41E1A6FD9001573D7 /* ibss */,
 				437AE36A1E01CC7600FA5A89 /* offsetfinder.c */,
+				D3C07E981E1663A4001D38A4 /* kloader.c */,
 				437AE36B1E01CC7600FA5A89 /* offsetfinder.h */,
+				D3AED2C61E1A7397001573D7 /* kloader_asm.s */,
 			);
 			path = Trident;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43CDFA561DCFA16600046EB0 /* LaunchScreen.storyboard in Resources */,
+				D3AED2C51E1A6FD9001573D7 /* ibss in Resources */,
 				43CDFA531DCFA16600046EB0 /* Assets.xcassets in Resources */,
 				43CDFA511DCFA16600046EB0 /* Main.storyboard in Resources */,
 			);
@@ -198,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C07E9A1E166455001D38A4 /* kloader.c in Sources */,
+				D3AED2C71E1A7397001573D7 /* kloader_asm.s in Sources */,
 				43CDFA4E1DCFA16600046EB0 /* ViewController.m in Sources */,
 				43CDFA4B1DCFA16600046EB0 /* AppDelegate.m in Sources */,
 				43CDFA481DCFA16600046EB0 /* main.m in Sources */,
